@@ -1,0 +1,22 @@
+.picture {
+  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("/assets/images/reservationpage.jpg");
+  height: 70vh;
+  min-height: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.forma {
+  background-color: #eeeeee;
+}
+
+
+@media only screen and (max-width: 375px) {
+
+  .naslov {
+    font-size: 3em;
+  }
+
+}

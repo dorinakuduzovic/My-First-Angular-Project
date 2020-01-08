@@ -1,0 +1,11 @@
+<div class="container">
+  <h1 class="font-weight-normal font-italic  text-center mt-4 mb-0">Our Gallery</h1>
+  <hr class="mt-2 mb-5">
+  <div class="row text-center ">
+    <div class="col-lg-3 col-md-4 col-6" *ngFor="let gallerylink of galleryphotos">
+      <a class="d-block mb-4 h-100">
+        <img class="img-fluid" src={{gallerylink.img}} alt="">
+      </a>
+    </div>
+  </div>
+</div>

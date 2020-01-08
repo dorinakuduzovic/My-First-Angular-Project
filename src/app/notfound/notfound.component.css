@@ -1,0 +1,9 @@
+.notfound {
+  background-color: #eeeeee;
+  height: 70vh;
+  min-height: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}

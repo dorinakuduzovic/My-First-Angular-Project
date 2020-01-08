@@ -1,0 +1,43 @@
+.about {
+  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("/assets/images/aboutuspage.jpg");
+  height: 70vh;
+  min-height: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.row {
+  padding-right: 75px;
+  padding-left: 75px;
+
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.text {
+  border: darkgray;
+}
+
+.quote {
+  background-color: #EEE;
+  height: 30vh;
+  min-height: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+
+@media only screen and (max-height: 823px) {
+
+  .quote {
+    height: 50vh;
+    min-height: 300px;
+  }
+
+}

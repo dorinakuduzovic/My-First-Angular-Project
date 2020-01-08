@@ -1,0 +1,54 @@
+<div class="picture">
+  <div class="container h-100">
+    <div class="row h-100 align-items-center">
+      <div class="col-12 text-center">
+        <h1 class="naslov font-weight-normal font-italic  display-3 text-light ">Online Table Reservation</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="forma container-fluid">
+  <div class="container">
+    <div>
+      <form>
+        <br>
+        <div class="form-group">
+          <label for="name">First and Last Name</label>
+          <input type="text" class="form-control" id="name">
+        </div>
+
+        <div class="form-group">
+          <label for="phoneNumber">Phone Number</label>
+          <input type="number" class="form-control" id="phoneNumber">
+        </div>
+
+        <div class="form-group">
+          <label for="mail">E-mail</label>
+          <input type="email" class="form-control" id="mail">
+        </div>
+
+        <div class="form-group">
+          <label for="date">Set date</label>
+          <input type="date" class="form-control" id="date">
+        </div>
+
+        <div class="form-group">
+          <label for="time">Set time</label>
+          <input type="time" class="form-control" id="time">
+        </div>
+
+        <div class="form-group">
+          <label for="seats">Seats</label>
+          <select class="form-control" id="seats">
+            <option *ngFor="let seats of seats" [value]="seats">{{seats}}</option>
+          </select>
+        </div>
+        <br>
+        <button type="submit" class="btn btn-outline-dark btn-lg font-italic
+       font-weight-bold">Reserve a Table</button>
+      </form>
+    </div>
+    <br>
+  </div>
+</div>

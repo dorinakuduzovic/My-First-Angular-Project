@@ -1,0 +1,101 @@
+<!-- Menu -->
+<div class="content">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+        <div class="page-section">
+          <h1 class="page-title font-weight normal font-italic">Our Menu </h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <!--Cold Starters -->
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mb40">
+        <div class="menu-block">
+          <h3 class="menu-title">Cold Starters</h3>
+          <div *ngFor="let menuitem of menumenu">
+            <div *ngIf="menuitem.section === 1">
+              <div class="menu-content">
+                <div class="row">
+                  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <div class="dish-img"><a><img src={{menuitem.photo}} alt="" class="img-circle"></a>
+                    </div>
+                  </div>
+                  <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                    <div class="dish-content">
+                      <h5 class="dish-title"><a>{{menuitem.name}}</a></h5>
+                      <span class="dish-meta"> {{ menuitem.description }} </span>
+                      <div class="dish-price">
+                        <p> ${{ menuitem.price }}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!--Soups -->
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mb40">
+        <div class="menu-block">
+          <h3 class="menu-title">Soups</h3>
+          <div *ngFor="let menuitem of menumenu">
+            <div *ngIf="menuitem.section === 2">
+              <div class="menu-content">
+                <div class="row">
+                  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <div class="dish-img"><a><img src={{menuitem.photo}} alt="" class="img-circle"></a>
+                    </div>
+                  </div>
+                  <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                    <div class="dish-content">
+                      <h5 class="dish-title"><a>{{menuitem.name}}</a></h5>
+                      <span class="dish-meta"> {{ menuitem.description }} </span>
+                      <div class="dish-price">
+                        <p> ${{ menuitem.price }}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!--From the Oven -->
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mb40">
+        <div class="menu-block">
+          <h3 class="menu-title">From the Oven</h3>
+          <div *ngFor="let menuitem of menumenu">
+            <div *ngIf="menuitem.section === 3">
+              <div class="menu-content">
+                <div class="row">
+                  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <div class="dish-img"><a><img src={{menuitem.photo}} alt="" class="img-circle"></a>
+                    </div>
+                  </div>
+                  <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                    <div class="dish-content">
+                      <h5 class="dish-title"><a>{{menuitem.name}}</a></h5>
+                      <span class="dish-meta"> {{ menuitem.description }} </span>
+                      <div class="dish-price">
+                        <p> ${{ menuitem.price }}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
